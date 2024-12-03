@@ -21,8 +21,8 @@ import { Track } from 'livekit-client';
 registerGlobals();
 
 // Fill in these values with your own url and token.
-const wsURL = "wss://www.example.com"
-const token = "your-token-here"
+const wsURL = "wss://expo-ai-chatbot-jq0ubnkf.livekit.cloud"
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzMyNDYwNjYsImlzcyI6IkFQSUVqWVhuSHlMOWpHaCIsIm5iZiI6MTczMzI0NTE2Niwic3ViIjoicm9maSIsInZpZGVvIjp7ImNhblB1Ymxpc2giOnRydWUsImNhblB1Ymxpc2hEYXRhIjp0cnVlLCJjYW5TdWJzY3JpYmUiOnRydWUsInJvb20iOiJzYW1wbGUiLCJyb29tSm9pbiI6dHJ1ZX19.THN4mAV8NhG3_rIjcxalSt43LZkaLsXN5923d-sC-ug"
 export default function App() {
 
   // Start the audio session first.
