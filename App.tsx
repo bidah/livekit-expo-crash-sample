@@ -21,6 +21,7 @@ import {
 } from '@livekit/react-native';
 import { Track } from 'livekit-client';
 import { MediaDeviceFailure } from 'livekit-client';
+import { Audio } from 'expo-av';
 
 // registerGlobals must be called prior to using LiveKit.
 registerGlobals();
@@ -38,6 +39,13 @@ export default function App() {
 
   const onConnectButtonClicked = useCallback(async () => {
     try {
+      // Check microphone permission
+      const { status } = await Audio.requestPermissionsAsync();
+      if (status !== 'granted') {
+        Alert.alert('Permission required', 'Please grant microphone permission to start a conversation');
+        return;
+      }
+
       // For development, using hardcoded connection details
       // In production, this should come from your server
       const connectionDetailsData = {
@@ -94,9 +102,6 @@ export default function App() {
           serverUrl={connectionDetails.serverUrl}
           token={connectionDetails.participantToken}
           connect={true}
-          options={{
-            adaptiveStream: { pixelDensity: 'screen' },
-          }}
           audio={true}
           video={false}
           onConnected={() => {

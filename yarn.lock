@@ -3529,6 +3529,16 @@ expo-asset@~9.0.2:
     invariant "^2.2.4"
     md5-file "^3.2.3"
 
+expo-audio@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/expo-audio/-/expo-audio-0.3.4.tgz#6a40b15bc813c8c4e0929afa2625ef9f922430d1"
+  integrity sha512-aVcLBmg5v/j30wxkKwm5iR719r/nacDMLdUb8zdLkp/Do5VIoG7D6YQU74VJ/q+3Oh2pjO7CiEvM9NUjP+3fQA==
+
+expo-av@~13.10.6:
+  version "13.10.6"
+  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-13.10.6.tgz#ca1b5d0c46a016069f653c1740a25516ffc730a2"
+  integrity sha512-h3c1fg5yhWnP0RIGO+fhgPx6cmh4B4lnKdXR2i69aC3vs5D5Cu+JlzBon1gLIu6eUo2IVfC0RjSLpfQbcJ4doQ==
+
 expo-build-properties@~0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/expo-build-properties/-/expo-build-properties-0.11.1.tgz#dc9ab9fb1ac989b97da500b3ec75139c961d8b26"
