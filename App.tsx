@@ -12,7 +12,7 @@ import {
   AudioSession,
   LiveKitRoom,
   registerGlobals,
-  BarVisualizer,
+  // BarVisualizer,
   useLocalParticipant,
   TrackReference,
   useRoom,
@@ -77,12 +77,12 @@ function VoiceAssistant({
 
   return (
     <Animated.View style={[styles.visualizerContainer, { opacity: fadeAnim }]}>
-      <BarVisualizer
+      {/* <BarVisualizer
         trackRef={audioTrack}
         barCount={5}
         style={styles.visualizer}
         options={{ minHeight: 24 }}
-      />
+      /> */}
       {state === 'connected' && (
         <TouchableOpacity 
           style={styles.disconnectButton}
