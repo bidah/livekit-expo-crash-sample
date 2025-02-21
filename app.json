@@ -44,7 +44,12 @@
     },
     "plugins": [
       "@livekit/react-native-expo-plugin",
+    [
       "@config-plugins/react-native-webrtc",
+      {
+        "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+      }
+    ],
       "expo-audio"
     ],
     "extra": {

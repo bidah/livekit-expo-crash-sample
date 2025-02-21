@@ -137,7 +137,6 @@ export default function App() {
     } catch (error) {
       // Fallback to a temporary token for testing
       console.log('error', error);
-      return "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tIjoidm9pY2VfYXNzaXN0YW50X3Jvb21fODQwNiIsInJvb21Kb2luIjp0cnVlLCJjYW5QdWJsaXNoIjp0cnVlLCJjYW5QdWJsaXNoRGF0YSI6dHJ1ZSwiY2FuU3Vic2NyaWJlIjp0cnVlfSwiaXNzIjoiQVBJZGNyQWM2eTN0N29pIiwiZXhwIjoxNzM5ODMyMTY2LCJuYmYiOjAsInN1YiI6InZvaWNlX2Fzc2lzdGFudF91c2VyXzcwMzgifQ.ztrqQu4zIDRk3RAb_3cIjftUutZ4zuwBY7yfGadUTVk";
     }
   }
 
