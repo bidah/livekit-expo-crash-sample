@@ -12,7 +12,7 @@ import {
   AudioSession,
   LiveKitRoom,
   registerGlobals,
-  // BarVisualizer,
+  BarVisualizer,
   useLocalParticipant,
   TrackReference,
   useRoom,
@@ -130,7 +130,7 @@ export default function App() {
   async function generateToken() {
     try {
       // Replace with your token server endpoint
-      const response = await fetch('http://localhost:3001/api/connection-details');
+      const response = await fetch('http://localhost:3000/api/connection-details');
       const { participantToken } = await response.json();
       console.log('token', participantToken);
       return participantToken;
@@ -172,24 +172,24 @@ export default function App() {
           audio={true}
           video={false}
           onConnected={() => {
-            setAgentState('connected');
-            console.log('room connected');
+            // setAgentState('connected');
+            // console.log('room connected');
           }}
           onDisconnected={() => {
-            setConnectionDetails(undefined);
-            setAgentState('disconnected');
-            Animated.timing(buttonFadeAnim, {
-              toValue: 1,
-              duration: 1000,
-              useNativeDriver: true,
-            }).start();
-            console.log('room disconnected');
+            // setConnectionDetails(undefined);
+            // setAgentState('disconnected');
+            // Animated.timing(buttonFadeAnim, {
+            //   toValue: 1,
+            //   duration: 1000,
+            //   useNativeDriver: true,
+            // }).start();
+            // console.log('room disconnected');
           }}
         >
-          <VoiceAssistant 
+          {/* <VoiceAssistant 
             onStateChange={setAgentState} 
             onDisconnect={() => setConnectionDetails(undefined)} 
-          />
+          /> */}
         </LiveKitRoom>
       )}
     </View>
