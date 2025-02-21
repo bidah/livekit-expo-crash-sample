@@ -172,27 +172,19 @@ export default function App() {
           audio={true}
           video={false}
           onConnected={() => {
-            // setAgentState('connected');
-            // console.log('room connected');
+            setAgentState('connected');
+            console.log('room connected');
           }}
           onDisconnected={() => {
-            // setConnectionDetails(undefined);
-            // setAgentState('disconnected');
-            // Animated.timing(buttonFadeAnim, {
-            //   toValue: 1,
-            //   duration: 1000,
-            //   useNativeDriver: true,
-            // }).start();
-            // console.log('room disconnected');
+            setConnectionDetails(undefined);
+            setAgentState('disconnected');
+            console.log('room disconnected');
           }}
         >
-          {/* <VoiceAssistant 
+          <VoiceAssistant 
             onStateChange={setAgentState} 
             onDisconnect={() => setConnectionDetails(undefined)} 
-          /> */}
-          <View>
-            <Text>inner child</Text>
-          </View>
+          />
         </LiveKitRoom>
       )}
     </View>
