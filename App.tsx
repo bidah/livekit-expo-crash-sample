@@ -190,6 +190,9 @@ export default function App() {
             onStateChange={setAgentState} 
             onDisconnect={() => setConnectionDetails(undefined)} 
           /> */}
+          <View>
+            <Text>inner child</Text>
+          </View>
         </LiveKitRoom>
       )}
     </View>
